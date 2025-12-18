@@ -12,8 +12,11 @@ function getWords(){
     console.log(placeholders)    
     
     placeholders.forEach((placeholder, index)=> {
+        placeholders.innerHTML = words[index].value;
         console.log(placeholder, index);
     });
+
+    document.getElementById("story-screen").style.display="block"
 
     console.log(67);
 }
